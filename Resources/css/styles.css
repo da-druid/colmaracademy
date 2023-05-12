@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -26,6 +27,18 @@ header .desktop {
 
 .mobile {
     display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .desktop, header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display:flex;
+        justify-content: space-around;
+        width: 100%;
+    }
 }
 
 #logo h1{
@@ -70,7 +83,6 @@ nav ul li:last-child {
     color: rgb(54, 54, 54);
     padding-left: 24px;
     width: 30%;
-    
 }
 
 #sign-up h1 {
@@ -92,6 +104,50 @@ nav ul li:last-child {
     color: white;
     border: none;
     
+}
+
+@media only screen and (max-width: 450px) {
+    #banner {
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    #image {
+        padding: 0;
+        margin: 0;
+        width: 100%
+    }
+
+    #image img{
+        padding: 0;
+        margin: 0;
+        width: 100%
+    }
+
+    #sign-up {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #sign-up h1{
+        margin: 0;
+        padding: 0;
+        margin: 32px 16px;
+    }
+
+    #sign-up p{
+        margin: 0;
+        padding: 0;
+        margin: 0 16px 24px;
+    }
+
+    #sign-up button {
+        margin: 0 auto 32px;
+    }
 }
 
 #information {
@@ -148,6 +204,60 @@ nav ul li:last-child {
     margin-bottom: 8px;
 }
 
+#information .wrapper a {
+    color: rgb(20, 181, 245);
+}
+
+@media only screen and (max-width: 450px) {
+    .mobile {
+        display: block;
+    }
+    #information {
+        padding: 0;
+        margin: 0;
+    }
+
+    #information .right {
+        padding: 16px 16px 32px 16px;
+        margin: 0;
+        width: 100%;
+    }
+
+    #information .wrapper{
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #information .wrapper:nth-child(2){
+        margin-top: 64px;
+    }
+
+    #information .wrapper:nth-child(3){
+        margin-top: 64px;
+    }
+
+    #information .wrapper img{
+        padding: 0;
+        margin: 0 0 16px 0;
+        width: 100%;
+    }
+
+    #information .wrapper h3{
+        padding-left: 16px;
+    }
+
+    #information .wrapper p{
+        padding-left: 16px;
+    }
+
+    #information .wrapper a{
+        padding-left: 16px;
+        margin-bottom: 64px;
+    }
+}
+
 #course {
     background-color:lightgray;
     width: 100%;
@@ -196,6 +306,46 @@ nav ul li:last-child {
     margin-bottom: 24px;
 }
 
+@media only screen and (max-width: 450px) {
+    #course {
+        width: 100%;
+        background-color: white;
+        border: 2px solid whitesmoke;
+    }
+
+    #course .container {
+        display: block;
+        margin: 0 16px;
+    }
+
+    #course h1 {
+        margin: 0;
+        padding: 32px 0 16px 0;
+    }
+
+    #course .container div{
+        margin: 0 0 8px 0;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    #course .container div:last-of-type{
+        margin: 0 0 32px 0;
+    }
+
+    #course .container h3 {
+        padding: 16px 16px 24px 16px;
+    }
+
+    .mid {
+        margin: 0;
+    }
+
+    #course .container div h3{
+        margin: 0; 
+    }
+}
+
 #thesis {
     width: 100%;
     padding-top: 32px;
@@ -227,11 +377,44 @@ nav ul li:last-child {
     padding-top: 16px;
 }
 
+@media only screen and (max-width: 450px) {
+    #thesis {
+        display: block;
+        margin: 0;
+        padding: 0 0 24px 0;
+    }
+
+    #thesis h1 {
+        margin: 32px 0 16px 0;
+    }
+
+    #thesis .container .left {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
 footer {
     display: flex;
     margin-bottom: 32px;
     padding: 16px 24px 0;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 450px) {
+    footer {
+        display: block;
+        text-align: left;
+        font-size: smaller;
+        margin-bottom: 0;
+    }
+
+    footer p {
+        margin: 16px 0;
+    }
+    
 }
 
 footer ul li {
