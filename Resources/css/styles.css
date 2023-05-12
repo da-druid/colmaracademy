@@ -146,7 +146,8 @@ nav ul li:last-child {
     }
 
     #sign-up button {
-        margin: 0 auto 32px;
+        margin: 0 16px 32px;
+        
     }
 }
 
