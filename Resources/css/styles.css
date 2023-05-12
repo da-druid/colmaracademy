@@ -4,7 +4,9 @@
 }
 
 html {
+    width: 100%;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -14,6 +16,7 @@ header {
     align-items: center;
     
 }
+
 header .desktop {
     width: 100%;
     display: flex;
@@ -73,7 +76,7 @@ nav ul li:last-child {
 #sign-up h1 {
     margin-bottom: 24px;
     text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 #sign-up p {
@@ -127,6 +130,10 @@ nav ul li:last-child {
     text-align: left;
 }
 
+.wrapper:hover{
+    background-color: lightgray;
+}
+
 .wrapper img {
     width: 35%;
     height: auto;
@@ -143,15 +150,97 @@ nav ul li:last-child {
 
 #course {
     background-color:lightgray;
-    width: 100%
+    width: 100%;
 }
 
 #course h1 {
     padding: 32px 0;
+    max-width: 100%;
 }
 
 #course .container {
+    max-width: 100%;
     display: flex;
-    margin: 0 72px 32px;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+#course .container div {
+    width: 25%;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.mid {
+    margin: 0 32px 32px;
+}
+
+#course .container div img{
+    width: 100%;
+    height: auto;
+}
+
+#course .container div h3{
+    margin-top: 16px;
+    margin-left: 16px; 
+}
+
+#course .container div p{
+    margin-top: 16px;
+    margin-left: 16px; 
+}
+
+#course .container div p:last-of-type{
+    margin-bottom: 24px;
+}
+
+#thesis {
+    width: 100%;
+    padding-top: 32px;
+    border-bottom: 2px solid lightgray;
+}
+
+#thesis .container {
+    width: 100%;
+    display: flex;
+}
+
+#thesis .left {
+    width: 60%;
+    margin: 32px 24px;
+    text-align:left;
+}
+
+#thesis .left h3 {
+    margin: 24px 0 8px 0;
+}
+
+#thesis .left p {
+    margin-bottom: 32px;
+}
+
+#thesis .right {
+    margin-top: 16px;
+    width: 40%;
+    padding-top: 16px;
+}
+
+footer {
+    display: flex;
+    margin-bottom: 32px;
+    padding: 16px 24px 0;
+    justify-content: space-between;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-left: 16px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
